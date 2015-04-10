@@ -16,5 +16,7 @@ class TodoControllerSpec extends Specification {
     }
 
     void "test something"() {
+		controller.index()
+		assert "create new task to do" == response.text
     }
 }
