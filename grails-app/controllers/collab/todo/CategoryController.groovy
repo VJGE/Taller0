@@ -2,5 +2,5 @@ package collab.todo
 
 class CategoryController {
 
-    def index() { }
+    static scaffold = Category
 }
