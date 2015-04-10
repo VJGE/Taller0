@@ -7,5 +7,6 @@ class User {
 	String lastName
 	
     static constraints = {
+		userName(blank:false,unique:true)
     }
 }

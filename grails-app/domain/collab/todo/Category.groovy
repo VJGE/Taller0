@@ -7,5 +7,9 @@ class Category {
 	User user
 	
     static constraints = {
+		name(blank:false)
     }
+	String toString(){
+		name
+	}
 }
