@@ -2,7 +2,6 @@ package collab.todo
 
 class Todo {
 	
-	User owner
 	String name
 	String note
 	String priority
@@ -10,6 +9,10 @@ class Todo {
 	Date createdDate
 	Date dueDate
 	Date completedDate
+	
+	User owner
+	Category category
+	static belongsTo = [User, Category]
 	
     static constraints = {
 		name(blank:false)
